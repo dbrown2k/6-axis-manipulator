@@ -1,0 +1,61 @@
+/****************************************************************************************
+* RUMBA pin assignment
+*
+****************************************************************************************/
+
+// Leg_0
+#define X_STEP_PIN         17	PH0
+#define X_DIR_PIN          16	PH1
+#define X_ENABLE_PIN       48	PL1
+
+// Leg_1
+#define Y_STEP_PIN         54	PF0
+#define Y_DIR_PIN          47 	PL2
+#define Y_ENABLE_PIN       55	PF1
+
+// Leg_2
+#define Z_STEP_PIN         57 	PF3
+#define Z_DIR_PIN          56	PF2
+#define Z_ENABLE_PIN       62 	PK0
+
+// Leg_3
+#define E0_STEP_PIN        23	PA1
+#define E0_DIR_PIN         22	PA0
+#define E0_ENABLE_PIN      24	PA2
+
+// Leg_4
+#define E1_STEP_PIN        26	PA4
+#define E1_DIR_PIN         25	PA3
+#define E1_ENABLE_PIN      27	PA5
+
+// Leg_5
+#define E2_STEP_PIN        29	PA7
+#define E2_DIR_PIN         28	PA6
+#define E2_ENABLE_PIN      39	PG2
+
+
+#define LED_PIN            13	PB7
+
+
+#define FAN_PIN            7 	PH5
+#define FAN1_PIN 		   8	PH4
+
+I/O
+#define X_MIN_PIN          37	PC0	// Leg_0
+#define X_MAX_PIN          36 	PC1 // Leg_1
+#define Y_MIN_PIN          35	PC2 // Leg_2
+#define Y_MAX_PIN          34 	PC3	// Leg_3
+#define Z_MIN_PIN          33	PC4	// Leg_4
+#define Z_MAX_PIN          32	PC5	// Leg_5
+
+
+with DRV8825 - Dip switch
+1 	2 	3 	step mode
+0 	0 	0 	Full step (2-phase excitation) with 71% current
+1 	0 	0 	1/2 step (1-2 phase excitation)
+0 	1 	0 	1/4 step (W1-2 phase excitation)
+1 	1 	0 	8 microsteps / step
+0 	0 	1 	16 microsteps / step
+1 	0 	1 	32 microsteps / step
+0 	1 	1 	32 microsteps / step
+1 	1 	1 	32 microsteps / step 
